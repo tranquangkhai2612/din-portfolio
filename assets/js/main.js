@@ -64,10 +64,10 @@ tabs.forEach((tab) => {
   });
 });
 
-/*==================== SERVICES MODAL ====================*/
-const modalViews = document.querySelectorAll(".services_modal");
-const modalBtns = document.querySelectorAll(".services_button");
-const modalCloses = document.querySelectorAll(".services_modal-close");
+/*==================== EXPERIENCE MODAL ====================*/
+const modalViews = document.querySelectorAll(".experience_modal");
+const modalBtns = document.querySelectorAll(".experience_button");
+const modalCloses = document.querySelectorAll(".experience_modal-close");
 
 let modal = function (modalClick) {
   modalViews[modalClick].classList.add("active-modal");
@@ -86,6 +86,25 @@ modalCloses.forEach((modalClose) => {
     });
   });
 });
+
+// PORTFOLIO TOGGLE VIEW
+const portData = document.getElementsByClassName("port_data"),
+  portHeader = document.querySelectorAll(".port_header");
+
+function togglePort() {
+  let itemClass = this.parentNode.className;
+  for (i = 0; i < portData.length; i++) {
+    portData[i].className = "port_data port_close";
+  }
+  if (itemClass === "port_data port_close") {
+    this.parentNode.className = "port_data port_open";
+  }
+}
+
+portHeader.forEach((el) => {
+  el.addEventListener("click", togglePort);
+});
+
 /*==================== PORTFOLIO SWIPER  ====================*/
 var swiperPort = new Swiper(".mySwiper", {
   cssMode: true,
