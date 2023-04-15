@@ -87,7 +87,7 @@ modalCloses.forEach((modalClose) => {
   });
 });
 /*==================== PORTFOLIO SWIPER  ====================*/
-var swiper = new Swiper(".mySwiper", {
+var swiperPort = new Swiper(".mySwiper", {
   cssMode: true,
   loop: true,
   navigation: {
@@ -101,6 +101,22 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 /*==================== TESTIMONIAL ====================*/
+var swiperTest = new Swiper(".test_container", {
+  loop: true,
+  grabCursor: true,
+  spaceBetween: 48,
+
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+    dynamicBullets: true,
+  },
+  breakpoints: {
+    568: {
+      slidesPerView: 2,
+    },
+  },
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 
