@@ -1002,9 +1002,273 @@ background-color: #FFF;
 }
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media screen and (max-width: 350px) {
+  .container{
+    margin-left: var(--mb-1);
+    margin-right: var(--mb-1);
+  }
 
+  .nav_menu{
+    padding: 2rem .25rem 4rem;
+  }
+
+  .nav_list{
+    column-gap: 0;
+  }
+
+  .home_content{
+    grid-template-columns: .25fr 3fr;
+  }
+
+  .home_blob{
+    width: 180px;
+  }
+
+  .skills_title{
+    font-size: var(--normal-font-size);
+  }
+
+  .quali_data{
+    gap: .5rem;
+  }
+
+  .experience_container{
+    grid-template-columns: max-content;
+    justify-content: center;
+  }
+
+  .experience_content{
+    padding-right: 3.5rem;
+  }
+
+  .experience_modal{
+    padding: 0 .5rem;
+  }
+
+  .project_img{
+    width: 200px;
+  }
+
+  .test_data, .test_header{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .test_img{
+    margin-right: 0;
+    margin-bottom: var(--mb-0-25);
+  }
+
+  .test_data, .test_description{
+    text-align: center;
+  }
+}
 
 /* For medium devices */
+@media  screen and (min-width:568px) {
+  .home_content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .home_data{
+    grid-column: initial;
+  }
+
+  .home_img{
+    order: 1;
+    justify-self: center;
+  }
+
+  .about_container, .skills_container, .port_container, .project_container, .contact_container, .footer_container{
+    grid-template-columns: repeat(2,1fr);
+  }
+
+  .quali_sections{
+    display: grid;
+    grid-template-columns: .6fr;
+    justify-content: center;
+  }
+}
+
 
 
 /* For large devices */
+@media screen and (min-width:768px){
+  .container{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  body{
+    margin: 0;
+  }
+
+  .section{
+    padding: 6rem 0 2rem;
+  }
+
+  .section_subtitle{
+    margin-bottom: 4rem;
+  }
+
+  .header{
+    top: 0;
+    bottom: initial;
+  }
+
+  .header,
+  .main,
+  .footer_container{
+    padding: 0 1rem ;
+  }
+
+  .nav{
+    height: calc(var(--header-height)+ 1.5rem);
+    column-gap: 1rem;
+  }
+
+  .nav_icon, .nav_close, .nav_toggle{
+    display: none;
+  }
+
+  .nav_list{
+    display: flex;
+    column-gap: 2rem;
+  }
+
+  .nav_menu{
+    margin-left: auto;
+  }
+
+  .change-theme{
+    margin: 0;
+  }
+
+  .home_container{
+    row-gap: 5rem;
+  }
+
+  .home_content{
+    padding-top: 5.5rem;
+    column-gap: 2rem;
+  }
+
+  .home_blob{
+    width: 270px;
+  }
+
+  .home_scroll{
+    display: block;
+  }
+
+  .home_scroll-button{
+    margin-left: 3rem;
+  }
+
+  .about_container{
+    column-gap: 5rem;
+  }
+
+  .about_img{
+    width: 350px;
+  }
+
+  .about_description{
+    text-align: initial;
+  }
+
+  .about_info{
+    justify-content: space-between;
+  }
+
+  .about_info{
+    justify-content: space-between;
+  }
+
+  .about_buttons{
+    justify-content: initial;
+  }
+
+  .quali_tabs{
+    justify-content: center;
+  }
+
+  .quali_button{
+    margin: var(--mb-1);
+  }
+
+  .quali_sections{
+    grid-template-columns: .5fr;
+  }
+
+  .experience_container{
+    grid-template-columns: repeat(3,218px);
+    justify-content: center;
+  }
+
+  .experience_icon{
+    font-size: 2rem;
+  }
+
+  .experience_content{
+    padding: 6rem 0 2rem 2.5rem;
+  }
+
+  .experience_modal-content{
+    width: 450px;
+  }
+
+  .port_img{
+    width: 320px;
+  }
+
+  .port_content{
+    align-items: center;
+  }
+
+  .project{
+    text-align: initial;
+  }
+
+  .project_bg{
+    background: none;
+  }
+
+  .project_container{
+    background-color: var(--first-color-second);
+    border-radius: 1rem;
+    padding: 3rem 2.5rem 2rem ;
+    grid-template-columns: 1fr max-content;
+    column-gap: 3rem;
+  }
+
+  .project_data{
+    padding-top: .8rem;
+  }
+
+  .footer_container{
+    grid-template-columns: repeat(3,1fr);
+  }
+
+  .footer_bg{
+    padding: 3rem 0 3.5rem;
+  }
+
+  .footer_links{
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+
+  .footer_socials{
+    justify-self: flex-end;
+  }
+
+  .footer_copy{
+    margin-top: 4.5rem;
+  }
+}
+
+/* LARGER DEVICES */
+
+
+
